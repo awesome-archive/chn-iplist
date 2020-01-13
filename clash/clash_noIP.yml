@@ -50,10 +50,10 @@ Rule:
 - DOMAIN-KEYWORD,wlmonitor,REJECT
 - DOMAIN-KEYWORD,zjtoolbar,REJECT
 - DOMAIN-KEYWORD,adsrvr,REJECT
+- DOMAIN-KEYWORD,gdt,REJECT
 - DOMAIN-SUFFIX,sdkapp.uve.wibo.com,REJECT
 
 # Proxy
-- IP-CIDR,91.108.56.116,PROXY
 - IP-CIDR,91.108.56.0/22,PROXY
 - IP-CIDR,91.108.56.0/24,PROXY
 - IP-CIDR,91.108.8.0/22,PROXY
@@ -76,6 +76,7 @@ Rule:
 - DOMAIN-KEYWORD,google,Proxy
 - DOMAIN-KEYWORD,gstatic,Proxy
 - DOMAIN-KEYWORD,youtube,Proxy
+- DOMAIN-SUFFIX,googleapis.cn,Proxy
 
 - DOMAIN-KEYWORD,appledaily,Proxy
 - DOMAIN-KEYWORD,github,Proxy
@@ -85,10 +86,14 @@ Rule:
 - DOMAIN-KEYWORD,telegram,Proxy
 - DOMAIN-SUFFIX,humblebundle.com,PROXY
 - DOMAIN-KEYWORD,steam,Proxy
+- DOMAIN-SUFFIX,analytics.twitter.com,PROXY
 
 # Direct
 - DOMAIN-SUFFIX,fonts.googleapis.com,DIRECT
 - DOMAIN-SUFFIX,fonts.gstatic.com,DIRECT
+- DOMAIN-SUFFIX,softpedia.com,DIRECT
+- IP-CIDR,61.132.98.242,DIRECT
+- DOMAIN-SUFFIX,mtalk.google.com,DIRECT
 
 - DOMAIN-SUFFIX,apple.com,DIRECT
 - DOMAIN-SUFFIX,crashlytics.com,DIRECT
